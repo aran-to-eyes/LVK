@@ -1,0 +1,252 @@
+/*
+ * layout.css
+ *
+ * Page-structure classes: containers, sections, grids.
+ * No component-specific styles here — those go in components.css.
+ *
+ * SECTIONS
+ *   1. Container
+ *   2. Section wrapper
+ *   3. Two-column grid
+ *   4. Card grid
+ *   5. Header layout
+ *   6. Footer layout
+ */
+
+/* ============================================================================
+   1. Container
+   Centred max-width wrapper with consistent horizontal padding.
+============================================================================ */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.container--wide {
+  max-width: var(--container-wide);
+}
+
+/* ============================================================================
+   2. Section wrapper
+   Vertical rhythm between page sections.
+============================================================================ */
+.section {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+.section--sm {
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
+}
+
+.section--lg {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
+/* Alternating background for visual separation without explicit dividers */
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section--primary {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+}
+
+.section--primary h2,
+.section--primary h3,
+.section--primary p {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .section--sm {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+  }
+
+  .section--lg {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+}
+
+/* ============================================================================
+   3. Two-column grid
+   Equal-width columns on desktop, stacked on mobile.
+============================================================================ */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.two-col--reversed > :first-child {
+  order: 2;
+}
+.two-col--reversed > :last-child {
+  order: 1;
+}
+
+.two-col--wide-left {
+  grid-template-columns: 3fr 2fr;
+}
+
+.two-col--wide-right {
+  grid-template-columns: 2fr 3fr;
+}
+
+@media (max-width: 768px) {
+  .two-col,
+  .two-col--wide-left,
+  .two-col--wide-right {
+    grid-template-columns: 1fr;
+  }
+
+  .two-col--reversed > :first-child,
+  .two-col--reversed > :last-child {
+    order: unset;
+  }
+}
+
+/* ============================================================================
+   4. Card grid
+   Auto-fill card layout that adapts to available width.
+============================================================================ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.card-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .card-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .card-grid--3,
+  .card-grid--2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================================
+   5. Header layout
+   Header is taller (80px) and more spacious than the original 64px.
+   The inline desktop nav has been removed — navigation is always accessed
+   via the burger menu (see AppHeader.vue + MobileNav.vue).
+============================================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  height: var(--header-height);
+  background: var(--color-bg);
+  border-bottom: var(--border-width) solid var(--color-border);
+  z-index: var(--z-header);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Let the container fill the full header height so the inner flex
+   layout can truly centre the logo and burger vertically. */
+.site-header .container {
+  height: 100%;
+}
+
+/*
+ * Inner layout: logo centered horizontally, burger pinned to the right.
+ * We use position:relative on the inner + position:absolute on the burger
+ * so the logo can sit exactly in the middle regardless of burger width.
+ */
+.site-header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+
+/* Logo link — no text decoration, no color changes on visited */
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
+}
+
+.site-header__logo:visited {
+  color: inherit;
+}
+
+/* ============================================================================
+   6. Footer layout
+============================================================================ */
+.site-footer {
+  background: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-8);
+}
+
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto);
+  gap: var(--space-12);
+  padding-bottom: var(--space-12);
+  border-bottom: var(--border-width) solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding-top: var(--space-8);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 768px) {
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

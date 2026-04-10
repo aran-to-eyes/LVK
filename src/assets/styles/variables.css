@@ -1,0 +1,182 @@
+/*
+ * variables.css
+ *
+ * Design-token layer — all CSS custom properties.
+ * Every other CSS file reads from these variables.
+ * Changing a token here propagates site-wide instantly.
+ *
+ * SECTIONS
+ *   1. Colour palette
+ *   2. Typography
+ *   3. Spacing scale
+ *   4. Layout
+ *   5. Borders & radii
+ *   6. Shadows
+ *   7. Transitions
+ *   8. Z-index scale
+ */
+
+:root {
+  /* =========================================================================
+     1. Colour palette
+     =========================================================================
+     Primary:  deep trust-blue used for headings, links, and interactive states
+     Accent:   warm teal-green for CTA buttons and highlights
+     Text:     near-black with good contrast (WCAG AA on white = ✓)
+     Surface:  white and a soft off-white for alternating sections
+     Border:   muted grey for dividers
+     Error:    clear red for error states
+  ========================================================================= */
+
+/* Logo Colors */
+/* Dark Grey: 83838 */
+/* Blue: 0085bf */
+
+  /* Primary */
+  --color-primary:          #0085bf;
+  --color-primary-hover:    #086187;
+  --color-primary-light:    #3cb9ef;
+  --color-primary-bg:       #ebf5fb;
+
+  /* Accent (CTAs, success) */
+  --color-accent:           #0085bf;
+  --color-accent-hover:     #086187;
+  --color-accent-light:     #3cb9ef;
+
+  /* Text */
+  --color-text:             #1c2833;
+  --color-text-secondary:   #5d6d7e;
+  --color-text-muted:       #839192;
+  --color-text-inverse:     #ffffff;
+
+  /* Surfaces */
+  --color-bg:               #ffffff;
+  --color-bg-alt:           #f4f6f8;
+  --color-bg-dark:          #383838;
+
+  /* Border */
+  --color-border:           #d0d7de;
+  --color-border-strong:    #aab4be;
+
+  /* Feedback colours */
+  --color-error:            #c0392b;
+  --color-error-bg:         #fdedec;
+  --color-warning:          #b7770d;
+  --color-warning-bg:       #fef9e7;
+  --color-success:          #1e8449;
+  --color-success-bg:       #d5f5e3;
+
+  /* =========================================================================
+     2. Typography
+  ========================================================================= */
+
+  /*
+   * System font stack — no external fonts to keep GDPR compliance trivial
+   * and eliminate render-blocking requests.
+   */
+  --font-family-base:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Cairo';
+
+  --font-family-mono:
+    'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+  /* Scale (modular, ratio ~1.25) */
+  --font-size-xs:    0.75rem;    /*  12px */
+  --font-size-sm:    0.875rem;   /*  14px */
+  --font-size-base:  1rem;       /*  16px */
+  --font-size-md:    1.125rem;   /*  18px */
+  --font-size-lg:    1.25rem;    /*  20px */
+  --font-size-xl:    1.5rem;     /*  24px */
+  --font-size-2xl:   1.875rem;   /*  30px */
+  --font-size-3xl:   2.25rem;    /*  36px */
+  --font-size-4xl:   2.75rem;    /*  44px */
+
+  --font-weight-normal:  400;
+  --font-weight-medium:  500;
+  --font-weight-semi:    600;
+  --font-weight-bold:    700;
+
+  --line-height-tight:   1.25;
+  --line-height-snug:    1.4;
+  --line-height-normal:  1.6;
+  --line-height-relaxed: 1.75;
+
+  /* =========================================================================
+     3. Spacing scale (base unit = 4px)
+  ========================================================================= */
+  --space-1:    0.25rem;   /*  4px */
+  --space-2:    0.5rem;    /*  8px */
+  --space-3:    0.75rem;   /* 12px */
+  --space-4:    1rem;      /* 16px */
+  --space-5:    1.25rem;   /* 20px */
+  --space-6:    1.5rem;    /* 24px */
+  --space-8:    2rem;      /* 32px */
+  --space-10:   2.5rem;    /* 40px */
+  --space-12:   3rem;      /* 48px */
+  --space-16:   4rem;      /* 64px */
+  --space-20:   5rem;      /* 80px */
+  --space-24:   6rem;      /* 96px */
+  --space-32:   8rem;      /* 128px */
+  --space-hero: 12rem;      
+
+  /* =========================================================================
+     4. Layout
+  ========================================================================= */
+  --container-max:     1200px;
+  --container-narrow:  800px;
+  --container-wide:    1400px;
+  --container-padding: var(--space-6);   /* horizontal gutter on small screens */
+
+  /* Header height — spacious enough to give the logo room to breathe */
+  --header-height: 120px;
+
+  /* Sidebar navigation width (off-canvas panel) */
+  --sidebar-width: 320px;
+
+  /* Breakpoints (used in JS if needed; mirrors media queries in CSS) */
+  --bp-sm:  480px;
+  --bp-md:  768px;
+  --bp-lg:  1024px;
+  --bp-xl:  1280px;
+
+  /* =========================================================================
+     5. Borders & radii
+  ========================================================================= */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  --border-width: 1px;
+  --border-width-thick: 2px;
+
+  /* =========================================================================
+     6. Shadows
+  ========================================================================= */
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md:  0 4px 12px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg:  0 10px 25px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(26, 82, 118, 0.35);
+
+  /* =========================================================================
+     7. Transitions
+  ========================================================================= */
+  --transition-fast:    0.12s ease;
+  --transition-base:    0.2s ease;
+  --transition-slow:    0.35s ease;
+
+  /* =========================================================================
+     8. Z-index scale
+  ========================================================================= */
+  --z-below:    -1;
+  --z-base:      0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-sidebar:  250;
+  --z-header:   300;
+  --z-modal:    400;
+  --z-toast:    500;
+}

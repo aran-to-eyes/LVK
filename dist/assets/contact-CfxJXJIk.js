@@ -1,0 +1,1 @@
+const o={organisationName:"Low Vision Kreis",street:"Musterstraße 1",postalCode:"70000",city:"Stuttgart",phone:"+49 711 000000",email:"info@low-vision-kreis.de",social:{facebook:null,instagram:null,youtube:null}};export{o as c};

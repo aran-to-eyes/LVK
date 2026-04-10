@@ -1,0 +1,241 @@
+/*
+ * base.css
+ *
+ * CSS reset and foundational element styles.
+ * No class names here — these are the bare-element defaults that everything
+ * else builds on top of.
+ *
+ * SECTIONS
+ *   1. Modern box-sizing reset
+ *   2. Body & root
+ *   3. Typography (h1-h6, p, lists, blockquote)
+ *   4. Links
+ *   5. Buttons (element reset)
+ *   6. Form elements
+ *   7. Media
+ *   8. Skip-navigation link
+ *   9. Focus styles (accessibility)
+ *  10. Print basics
+ */
+
+/* ============================================================================
+   1. Modern box-sizing reset
+   ============================================================================
+   Every element includes padding and border in its declared width/height.
+   This is the single most impactful CSS normalisation.
+============================================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================================
+   2. Body & root
+============================================================================ */
+html {
+  font-size: 16px;        /* 1rem base — user's browser setting is respected */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; /* prevent iOS font inflation */
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================================
+   3. Typography
+============================================================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+h5 { font-size: var(--font-size-md); }
+h6 { font-size: var(--font-size-base); font-weight: var(--font-weight-semi); }
+
+@media (max-width: 768px) {
+  h1 { font-size: var(--font-size-2xl); }
+  h2 { font-size: var(--font-size-xl); }
+  h3 { font-size: var(--font-size-lg); }
+}
+
+p {
+  margin-bottom: var(--space-4);
+  max-width: 72ch;   /* line-length comfort ceiling */
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+li {
+  margin-bottom: var(--space-2);
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: var(--border-width-thick) solid var(--color-primary-light);
+  padding-left: var(--space-6);
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin: var(--space-6) 0;
+}
+
+strong { font-weight: var(--font-weight-bold); }
+em     { font-style: italic; }
+
+small {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ============================================================================
+   4. Links
+============================================================================ */
+a {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+a:visited {
+  color: var(--color-primary);
+}
+
+/* ============================================================================
+   5. Buttons (element reset — visual styles are in components.css)
+============================================================================ */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* ============================================================================
+   6. Form elements
+============================================================================ */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: var(--color-bg);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  width: 100%;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-focus);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* ============================================================================
+   7. Media
+============================================================================ */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================================================
+   8. Skip-navigation link
+   Hidden off-screen until focused — required for keyboard accessibility.
+============================================================================ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-weight: var(--font-weight-semi);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  z-index: var(--z-toast);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* ============================================================================
+   9. Focus styles
+   Visible focus ring on all interactive elements.
+   The ring only shows on keyboard navigation (not mouse clicks) via
+   :focus-visible, which is supported in all modern browsers.
+============================================================================ */
+:focus-visible {
+  outline: var(--border-width-thick) solid var(--color-primary-light);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ============================================================================
+   10. Print basics
+============================================================================ */
+@media print {
+  body {
+    font-size: 11pt;
+    color: #000;
+    background: #fff;
+  }
+
+  a::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  nav,
+  .no-print {
+    display: none !important;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "low-vision-kreis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Low Vision Kreis – standalone Vue 3 frontend with nearest-partner finder",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "marked": "^17.0.5",
+    "papaparse": "^5.4.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.8"
+  }
+}
