@@ -67,7 +67,6 @@ import { expertsContent as c } from '@/data/siteContent.js'
 
 import RichText    from '@/components/base/RichText.vue'
 import BaseSection  from '@/components/base/BaseSection.vue'
-import CtaBanner from '@/components/sections/CtaBanner.vue'
 import PartnerSearchBar from '@/components/search/PartnerSearchBar.vue'
 import PartnerSearchResults from '@/components/search/PartnerSearchResults.vue'
 import SearchStatus from '@/components/cards/SearchStatus.vue'
