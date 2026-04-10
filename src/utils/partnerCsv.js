@@ -26,7 +26,7 @@ import Papa from 'papaparse'
 import { normalizePostalCode } from '@/utils/normalize.js'
 
 /** Path to the CSV file served from /public */
-const CSV_URL = '${import.meta.env.BASE_URL}/data/Lowvision-partner_Stand_2023-5-010.csv'
+const CSV_URL = `${import.meta.env.BASE_URL}data/Lowvision-partner_Stand_2023-5-010.csv`
 
 /**
  * fetchAndParsePartners()
