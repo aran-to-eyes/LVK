@@ -35,7 +35,7 @@ export default defineConfig({
   },
 
   // Root-relative base path. Change to '/low-vision-kreis/' if deploying to a subdirectory.
-  base: '/',
+  base: '/LVK/',
 
   build: {
     // Output to dist/ (Vite default). Point your static host at this folder.
