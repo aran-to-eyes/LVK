@@ -27,7 +27,7 @@ import Fuse from 'fuse.js'
 import { normalizeGerman, normalizePostalCode } from '@/utils/normalize.js'
 
 /** Path to the JSON file served from /public */
-const GAZETTEER_URL = '/data/de-postal-gazetteer.json'
+const GAZETTEER_URL = `${import.meta.env.BASE_URL}data/de-postal-gazetteer.json`
 
 // ---------------------------------------------------------------------------
 // Module-level cache so the JSON is only fetched once per page session
