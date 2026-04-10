@@ -10,7 +10,7 @@
     />
 
     <BaseSection
-      v-for="(block, index) in infoBlocks"
+      v-for="(block, index) in infoBlocksResolved"
       :key="block.id"
       :variant="index % 2 === 0 ? 'default' : 'alt'"
     >
@@ -54,7 +54,8 @@ import { infoContent as c } from '@/data/siteContent.js'
 
 import BaseSection  from '@/components/base/BaseSection.vue'
 import HeroSection from '@/components/sections/HeroSection.vue'
-import infoBlocks from '@/data/infoBlocks.json'
+import infoBlocksRaw from '@/data/infoBlocks.json'
+const infoBlocksResolved = infoBlocksRaw.map(b => ({ ...b, imageUrl: import.meta.env.BASE_URL + b.imageUrl.replace(/^\//, '') }))
 import HomeImageTextBlock from '@/components/home/HomeImageTextBlock.vue'
 import NextExpert from '@/components/sections/NextExpert.vue'
 

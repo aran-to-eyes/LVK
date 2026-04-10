@@ -24,7 +24,7 @@
           aria-label="Low Vision Kreis – zur Startseite"
         >
           <img
-            src="/images/logo.png"
+            :src="`${base}images/logo.png`"
             alt="Low Vision Kreis"
             class="site-header__logo-img"
           />
@@ -61,6 +61,7 @@ import { ref } from 'vue'
 import BaseContainer from '@/components/base/BaseContainer.vue'
 import SidebarNav from '@/components/layout/MobileNav.vue'
 
+const base = import.meta.env.BASE_URL
 const navOpen = ref(false)
 
 function toggleNav() {

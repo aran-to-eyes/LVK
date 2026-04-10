@@ -19,7 +19,7 @@
 export const downloads = [
   {
     title: 'Low Vision Kreis - Beitrittserklärung',
-    file: '/downloads/2023_Beitrittserkla_rung.pdf',
+    file: `${import.meta.env.BASE_URL}downloads/2023_Beitrittserkla_rung.pdf`,
     type: 'PDF',
     size: '74 KB',
     category: 'Beitrittserklärung',
@@ -27,7 +27,7 @@ export const downloads = [
   },
   {
     title: 'Low Vision Kreis - Anmeldeformular',
-    file: '/downloads/Anmeldung_extern.pdf',
+    file: `${import.meta.env.BASE_URL}downloads/Anmeldung_extern.pdf`,
     type: 'PDF',
     size: '375 KB',
     category: 'Formular',

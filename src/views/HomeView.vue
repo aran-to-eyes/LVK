@@ -25,7 +25,7 @@
     <NextExpert/>
 
     <BaseSection
-      v-for="(block, index) in homeBlocks"
+      v-for="(block, index) in homeBlocksResolved"
       :key="block.id"
       :variant="index % 2 === 0 ? 'default' : 'alt'"
     >
@@ -38,7 +38,8 @@
 <script setup>
 import { useMeta } from '@/composables/useMeta.js'
 import { homeContent as c } from '@/data/siteContent.js'
-import homeBlocks from '@/data/homeBlocks.json'
+import homeBlocksRaw from '@/data/homeBlocks.json'
+const homeBlocksResolved = homeBlocksRaw.map(b => ({ ...b, imageUrl: import.meta.env.BASE_URL + b.imageUrl.replace(/^\//, '') }))
 
 import RichText           from '@/components/base/RichText.vue'
 import BaseSection        from '@/components/base/BaseSection.vue'
