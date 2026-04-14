@@ -126,9 +126,12 @@ export async function resolveByCity(cityName) {
   )
   if (partialMatches.length > 0) return partialMatches
 
+  /*
   // --- Pass 4: Fuse.js fuzzy match as last resort ---
   const fuzzyResults = fuzzySearchCity(input)
-  return fuzzyResults
+  return fuzzyResults*/
+
+  return []
 }
 
 /**
