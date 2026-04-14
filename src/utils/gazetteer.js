@@ -117,6 +117,7 @@ export async function resolveByCity(cityName) {
   )
   if (normMatches.length > 0) return normMatches
 
+  /*
   // --- Pass 3: partial/alias match — city contains the input or vice-versa ---
   // Handles "Frankfurt" matching "Frankfurt am Main", etc.
   const partialMatches = _gazetteerData.filter(
@@ -126,7 +127,7 @@ export async function resolveByCity(cityName) {
   )
   if (partialMatches.length > 0) return partialMatches
 
-  /*
+  
   // --- Pass 4: Fuse.js fuzzy match as last resort ---
   const fuzzyResults = fuzzySearchCity(input)
   return fuzzyResults*/
