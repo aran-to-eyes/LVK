@@ -1,27 +1,3 @@
-/**
- * utils/gazetteer.js
- *
- * Loads the local German postal-code / city gazetteer and provides lookup
- * functions for resolving user search input to geographic coordinates.
- *
- * WHY a local gazetteer?
- * The nearest-partner finder must work without any external API dependency.
- * The gazetteer JSON (public/data/de-postal-gazetteer.json) is fetched once
- * at first use and then cached in module memory.
- *
- * Lookup priority:
- *   1. Exact postal-code match (preferred for 5-digit input)
- *   2. Exact city-name match (case-insensitive, trimmed)
- *   3. Normalised city match (umlauts → digraphs, lowercase)
- *   4. Fuse.js fuzzy match (optional — only if Fuse is importable)
- *
- * When multiple gazetteer entries match the same city name (e.g. multiple
- * PLZs for Berlin), we return all matches and let the caller pick the
- * centroid — or, for postal-code searches, we return the single exact match.
- *
- * The optional fallback geocoder (services/geocoderFallback.js) is called
- * by usePartnerFinder.js ONLY if this module returns no results.
- */
 
 import Fuse from 'fuse.js'
 import { normalizeGerman, normalizePostalCode } from '@/utils/normalize.js'
@@ -29,9 +5,7 @@ import { normalizeGerman, normalizePostalCode } from '@/utils/normalize.js'
 /** Path to the JSON file served from /public */
 const GAZETTEER_URL = `${import.meta.env.BASE_URL}data/de-postal-gazetteer.json`
 
-// ---------------------------------------------------------------------------
-// Module-level cache so the JSON is only fetched once per page session
-// ---------------------------------------------------------------------------
+
 let _gazetteerData = null   // raw array of gazetteer entries
 let _byPostalCode = null    // Map<string, GazetteerEntry>
 let _cityList = null        // flat array of unique city name strings (for Fuse)

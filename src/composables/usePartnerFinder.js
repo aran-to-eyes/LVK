@@ -130,7 +130,7 @@ export function usePartnerFinder(partnersRef) {
 async function resolveCoordinate(query) {
   // --- Branch A: postal code ---
   if (isGermanPostalCode(query)) {
-    const entry = await resolveByPostalCode(query)
+    /*const entry = await resolveByPostalCode(query)
     if (entry) {
       return {
         latitude: entry.latitude,
@@ -138,11 +138,12 @@ async function resolveCoordinate(query) {
         city: entry.city,
         postalCode: entry.postalCode
       }
-    }
+    }*/
     // Postal code not in local gazetteer → try fallback geocoder
     return tryFallbackGeocode(query)
   }
 
+  /*
   // --- Branch B: city name ---
   const entries = await resolveByCity(query)
 
@@ -157,7 +158,7 @@ async function resolveCoordinate(query) {
       city: coord.city
     }
   }
-
+*/
   // City not found locally → try fallback geocoder
   return tryFallbackGeocode(query)
 }
