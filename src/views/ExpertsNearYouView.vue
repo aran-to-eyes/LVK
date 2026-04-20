@@ -83,22 +83,13 @@ useMeta({
 // Load partner data (singleton — only fetched once per session)
 const { partners, loading: partnersLoading, error: partnersError } = usePartners()
 
-// Search logic
 const {
   status: searchStatus,
   results: searchResults,
   resolvedLocation,
-  search,
-  reset
+  search: runSearch,
+  reset: resetSearch
 } = usePartnerFinder(partners)
-
-function runSearch(query) {
-  search(query)
-}
-
-function resetSearch() {
-  reset()
-}
 </script>
 
 <style scoped>
