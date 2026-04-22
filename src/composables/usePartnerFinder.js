@@ -1,5 +1,5 @@
 import { ref, readonly } from 'vue'
-import { normalizeSearchInput } from '@/utils/normalize.js'
+import { normalizeSearchInput, isGermanPostalCode } from '@/utils/normalize.js'
 import { geocode } from '@/services/geocoderFallback.js'
 import { sortPartnersByDistance } from '@/utils/distance.js'
 
@@ -19,7 +19,7 @@ export function usePartnerFinder(partnersRef) {
     resolvedLocation.value = null
 
     try {
-      const coordinate = await geocode(query)
+      const coordinate = await resolveCoordinate(query, partnersRef.value)
 
       if (!coordinate) {
         status.value = 'not-found'
@@ -49,4 +49,14 @@ export function usePartnerFinder(partnersRef) {
     search,
     reset
   }
+}
+
+function resolveCoordinate(query, partners) {
+  if (isGermanPostalCode(query)) {
+    const match = partners.find((p) => p.PLZ === query.trim())
+    if (match) {
+      return Promise.resolve({ latitude: match.Lat, longitude: match.Lng, city: match.Ort })
+    }
+  }
+  return geocode(query)
 }

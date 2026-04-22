@@ -21,6 +21,11 @@ export function normalizePostalCode(input) {
   return digits.padStart(5, '0')
 }
 
+export function isGermanPostalCode(input) {
+  if (!input || typeof input !== 'string') return false
+  return /^\s*\d{5}\s*$/.test(input)
+}
+
 export function normalizeSearchInput(input) {
   if (!input || typeof input !== 'string') return ''
   return input.trim().replace(/\s+/g, ' ')
