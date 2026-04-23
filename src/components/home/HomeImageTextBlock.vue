@@ -15,7 +15,6 @@
 
     <div class="home-block__content">
       <h2 v-if="heading" class="home-block__heading">{{ heading }}</h2>
-      <!--p class="home-block__body">{{ body }}</p-->
       <RichText :content="body" class="lead" />
     </div>
   </div>
@@ -60,12 +59,6 @@ defineProps({
   margin-bottom: var(--space-5);
 }
 
-.home-block__body {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
-  line-height: var(--line-height-relaxed);
-}
-
 @media (max-width: 768px) {
   .home-block {
     grid-template-columns: 1fr;
@@ -85,8 +78,5 @@ defineProps({
     font-size: var(--font-size-xl);
   }
 
-  .home-block__body {
-    font-size: var(--font-size-base);
-  }
 }
 </style>

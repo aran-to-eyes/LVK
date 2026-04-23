@@ -12,8 +12,7 @@
 import BaseContainer from '@/components/base/BaseContainer.vue'
 
 defineProps({
-  title:       { type: String, required: true },
-  subtitle:    { type: String, default: '' },
-  breadcrumbs: { type: Array, default: () => [] }
+  title:    { type: String, required: true },
+  subtitle: { type: String, default: '' }
 })
 </script>

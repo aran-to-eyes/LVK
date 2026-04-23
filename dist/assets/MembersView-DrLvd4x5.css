@@ -1,0 +1,1 @@
+.member-count[data-v-dd2e7745]{font-size:var(--font-size-sm);color:var(--color-text-muted);margin-bottom:var(--space-6)}.member-grid[data-v-dd2e7745]{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-6)}@media (max-width: 480px){.member-grid[data-v-dd2e7745]{grid-template-columns:1fr}}

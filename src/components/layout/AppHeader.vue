@@ -58,7 +58,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import BaseContainer from '@/components/base/BaseContainer.vue'
 import SidebarNav from '@/components/layout/MobileNav.vue'
 
 const base = import.meta.env.BASE_URL

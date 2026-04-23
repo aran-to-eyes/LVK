@@ -34,15 +34,3 @@ export const downloads = [
     date: '2023-03-15'
   }
 ]
-
-/**
- * Returns all unique category strings found in the downloads array.
- * Used by the UI to build filter tabs or section headings.
- */
-export function getDownloadCategories() {
-  const seen = new Set()
-  for (const d of downloads) {
-    seen.add(d.category)
-  }
-  return Array.from(seen)
-}

@@ -11,6 +11,7 @@ const DownloadsView = () => import('@/views/DownloadsView.vue')
 const LegalNoticeView = () => import('@/views/LegalNoticeView.vue')
 const PrivacyPolicyView = () => import('@/views/PrivacyPolicyView.vue')
 const AccessibilityView = () => import('@/views/AccessibilityView.vue')
+const MembersView = () => import('@/views/MembersView.vue')
 const NotFoundView = () => import('@/views/NotFoundView.vue')
 
 const routes = [
@@ -43,6 +44,11 @@ const routes = [
     path: '/downloads',
     component: DownloadsView,
     meta: { title: 'Downloads – Low Vision Kreis' }
+  },
+  {
+    path: '/members',
+    component: MembersView,
+    meta: { title: 'Mitglieder – Low Vision Kreis' }
   },
   {
     path: '/legal-notice',

@@ -6,9 +6,8 @@
         <h2 class="cta-banner__headline">{{ headline }}</h2>
         <RichText v-if="body" :content="body" class="cta-banner__body" />
         <BaseButton
-          v-if="ctaText && (ctaTo || ctaHref)"
-          :to="ctaTo || undefined"
-          :href="ctaHref || undefined"
+          v-if="ctaText && ctaTo"
+          :to="ctaTo"
           :variant="'white'"
           size="lg"
         >

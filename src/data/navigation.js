@@ -30,5 +30,9 @@ export const mainNav = [
   {
     label: 'Downloads',
     to: '/downloads'
+  },
+  {
+    label: 'Mitglieder',
+    to: '/members'
   }
 ]

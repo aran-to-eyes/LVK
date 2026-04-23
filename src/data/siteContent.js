@@ -258,3 +258,13 @@ export const accessibilityContent = {
     subtitle: 'Barrierefreiheit dieser Website'
   }
 }
+
+// ---------------------------------------------------------------------------
+// Members page
+// ---------------------------------------------------------------------------
+export const membersContent = {
+  pageHeader: {
+    title: 'Unsere Mitglieder',
+    subtitle: 'Alle Mitgliedsbetriebe des Low Vision Kreises auf einen Blick.'
+  }
+}
