@@ -42,9 +42,6 @@ import HotlineBanner from './components/sections/HotlineBanner.vue'
 
 #main-content {
   flex: 1;
-  /* Remove default focus ring from the programmatic focus triggered by the
-     skip-navigation link — the outline is not needed here since the main
-     region is not an interactive control. */
   outline: none;
 }
 </style>
