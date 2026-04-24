@@ -2,6 +2,14 @@
 <template>
   <article class="partner-card" :aria-label="member.Bezeichnung">
 
+    <div v-if="member.Image" class="partner-card__image-wrap">
+      <img
+        :src="baseUrl + member.Image"
+        :alt="member.Bezeichnung"
+        class="partner-card__image"
+      />
+    </div>
+
     <div class="partner-card__header">
       <h3 class="partner-card__name">{{ member.Bezeichnung }}</h3>
     </div>
@@ -41,6 +49,8 @@ import { computed } from 'vue'
 const props = defineProps({
   member: { type: Object, required: true }
 })
+
+const baseUrl = import.meta.env.BASE_URL
 
 const cleanPhone = computed(() =>
   (props.member.Tel || '').replace(/\s/g, '')

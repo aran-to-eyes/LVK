@@ -38,11 +38,6 @@
       </a>
     </div>
 
-    <!-- Opening hours compact summary -->
-    <div v-if="openingHoursSummary" class="partner-card__hours">
-      <strong>Öffnungszeiten:</strong> {{ openingHoursSummary }}
-    </div>
-
     <!-- Open in maps link -->
     <a
       v-if="mapLink"
@@ -61,7 +56,6 @@
 <script setup>
 import { computed } from 'vue'
 import { formatDistance } from '@/utils/distance.js'
-import { getCompactOpeningHours } from '@/utils/openingHours.js'
 import { getPartnerMapLink } from '@/utils/maps.js'
 
 const props = defineProps({
@@ -75,14 +69,8 @@ const props = defineProps({
 
 const formattedDistance = computed(() => formatDistance(props.partner.distanceKm))
 
-// Strip whitespace from phone number for the tel: href
 const cleanPhone = computed(() =>
   (props.partner.Tel || '').replace(/\s/g, '')
-)
-
-// Compact opening hours string, e.g. "Mo–Fr 09:00–18:00, Sa 09:00–13:00"
-const openingHoursSummary = computed(() =>
-  getCompactOpeningHours(props.partner)
 )
 
 // OSM or fallback map URL
