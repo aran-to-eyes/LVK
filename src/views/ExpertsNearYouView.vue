@@ -15,14 +15,12 @@
           <RichText :content="c.intro.body" class="lead" />
         </div>
 
-        <!-- Data loading error (CSV could not load) -->
         <ErrorState
           v-if="partnersError"
           title="Partnerdaten nicht verfügbar"
           :message="partnersError"
         />
 
-        <!-- Search form -->
         <div v-else class="search-intro__form">
           <PartnerSearchBar
             :placeholder="c.searchPlaceholder"
@@ -33,7 +31,6 @@
             @reset="resetSearch"
           />
 
-          <!-- Inline status feedback below the input -->
           <SearchStatus
             :status="searchStatus"
             :resolved-location="resolvedLocation"
@@ -80,7 +77,6 @@ useMeta({
     'Geben Sie Ihre Postleitzahl oder Ihren Ort ein.'
 })
 
-// Load partner data (singleton — only fetched once per session)
 const { partners, loading: partnersLoading, error: partnersError } = usePartners()
 
 const {
@@ -93,7 +89,6 @@ const {
 </script>
 
 <style scoped>
-/* Center the entire search intro block like the page headers */
 .search-intro {
   display: flex;
   flex-direction: column;
@@ -112,7 +107,6 @@ const {
   margin-bottom: var(--space-4);
 }
 
-/* Form wrapper centers the search bar and status text */
 .search-intro__form {
   display: flex;
   flex-direction: column;
@@ -120,7 +114,6 @@ const {
   width: 100%;
 }
 
-/* Results heading centered to match */
 .results-heading {
   text-align: center;
   margin-bottom: var(--space-6);

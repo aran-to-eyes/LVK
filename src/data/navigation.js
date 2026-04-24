@@ -1,11 +1,3 @@
-/**
- * data/navigation.js
- *
- * Defines the main site navigation links.
- * Edit this array to add, remove, or rename navigation items.
- * The `to` value must match a path defined in router/index.js.
- */
-
 export const mainNav = [
   {
     label: 'Start',

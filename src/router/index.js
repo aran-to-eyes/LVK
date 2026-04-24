@@ -66,7 +66,6 @@ const routes = [
     meta: { title: 'Barrierefreiheit – Low Vision Kreis' }
   },
   {
-    // Catch-all: any path not matched above renders the 404 view
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: NotFoundView,

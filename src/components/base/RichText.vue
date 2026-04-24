@@ -7,7 +7,6 @@
 import { computed } from 'vue'
 import { marked, parseInline } from 'marked'
 
-// Renderer with target="_blank" on external links
 const renderer = new marked.Renderer()
 renderer.link = ({ href, title, tokens }) => {
   const text = tokens.map(t => t.raw).join('')
@@ -33,12 +32,8 @@ const html = computed(() => {
 </script>
 
 <style>
-/* Global (not scoped) so the styles reach the v-html subtree */
-
 .rich-text p {
   margin-bottom: var(--space-4);
-  /* Remove the global 72ch ceiling — the parent controls width here.
-     text-align: inherit ensures centred/right-aligned parents flow through. */
   max-width: none;
   text-align: inherit;
 }

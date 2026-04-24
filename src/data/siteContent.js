@@ -21,7 +21,7 @@ export const homeContent = {
 }
 
 export const expertsContent = {
-  
+
   hero: {
     tagline: '',
     headline: 'Experten in meiner Nähe',
@@ -57,11 +57,11 @@ export const aidsContent = {
       title: 'Kontrastreiches Sehen',
       tagline: 'Schutz vor Blendung und schädlichem Licht – bei gleichzeitig optimalem Sehen auf Ihrem individuellen Niveau.',
       items: [
-        { 
+        {
           name: 'Kantenfilter',
           img: `${import.meta.env.BASE_URL}images/aids/kantenfilter.webp`,
           img_source: 'Schweizer Optik',
-          description: 'Spezielle Filtertönungen reduzieren störendes UV- und Blaulicht und ermöglichen zugleich ein kontrastreiches, angenehmes Sehen – individuell abgestimmt auf Ihre Bedürfnisse.' 
+          description: 'Spezielle Filtertönungen reduzieren störendes UV- und Blaulicht und ermöglichen zugleich ein kontrastreiches, angenehmes Sehen – individuell abgestimmt auf Ihre Bedürfnisse.'
         },
         {
           name: 'Blend- & Sonnenschutz',
@@ -75,22 +75,22 @@ export const aidsContent = {
       title: 'Optische Sehhilfen',
       tagline: 'Stark vergrößernde Sehhilfen unterstützen Sie beim Lesen und Sehen in der Nähe und lassen sich flexibel an Ihre persönlichen Anforderungen anpassen.',
       items: [
-        { 
+        {
           name: 'Lupenbrille',
           img: `${import.meta.env.BASE_URL}images/aids/lupenbrillen.webp`,
           img_source: 'Schweizer Optik',
           description: 'Spezialbrillen mit integrierten Lupen, die für Nah- und Leseentfernung optimiert sind.' },
-        { 
+        {
           name: 'Handlupen',
           img: `${import.meta.env.BASE_URL}images/aids/handlupen.webp`,
           img_source: 'Schweizer Optik',
           description: 'Tragbare optische Lupen mit oder ohne Beleuchtung für flexiblen Einsatz.' },
-        { 
+        {
           name: 'Standlupen',
           img: `${import.meta.env.BASE_URL}images/aids/tischlupen.webp`,
           img_source: 'Eschenbach Optik',
           description: 'Auf einer Halterung montierte Lupen, ideal für Lesen und handwerkliche Tätigkeiten.' },
-        { 
+        {
           name: 'Fernrohrbrille',
           img: `${import.meta.env.BASE_URL}images/aids/individuellefernrohbrillen.webp`,
           img_source: 'Eschenbach Optik',
@@ -103,22 +103,22 @@ export const aidsContent = {
       items: [
         { name: 'Bildschirmlesegerät',
           img: `${import.meta.env.BASE_URL}images/aids/lesegerate.webp`,
-          img_source: 'Optolec', 
-          description: 'Desktop-Systeme, die Text und Bilder stark vergrößert auf einem Monitor darstellen.' 
+          img_source: 'Optolec',
+          description: 'Desktop-Systeme, die Text und Bilder stark vergrößert auf einem Monitor darstellen.'
         },
         { name: 'Digitale Handlupen',
           img: `${import.meta.env.BASE_URL}images/aids/digitalehandlupen.webp`,
-          img_source: 'Eschenbach Optik', 
-          description: 'Tragbare Geräte, die Objekte per Kamera erfassen und vergrößert auf einem kleinen Display zeigen.' 
+          img_source: 'Eschenbach Optik',
+          description: 'Tragbare Geräte, die Objekte per Kamera erfassen und vergrößert auf einem kleinen Display zeigen.'
         },
         { name: 'Mobile Kamerasysteme',
           img: `${import.meta.env.BASE_URL}images/aids/Kameras.webp`, img_source: 'evoptron',
-          description: 'Unterstützt Kinder und Jugendliche im Schulalltag mit flexibel vergrößerter Darstellung von Tafelbildern und Arbeitsmaterialien.' 
+          description: 'Unterstützt Kinder und Jugendliche im Schulalltag mit flexibel vergrößerter Darstellung von Tafelbildern und Arbeitsmaterialien.'
         },
         { name: 'Vorlesesysteme',
           img: `${import.meta.env.BASE_URL}images/aids/vorlesesystem.webp`,
           img_source: 'Eschenbach Optik',
-          description: 'Ermöglichen den bequemen Zugang zu geschriebenen Inhalten, indem Texte automatisch erkannt, vorgelesen und bei Bedarf digital weiterverarbeitet werden.' 
+          description: 'Ermöglichen den bequemen Zugang zu geschriebenen Inhalten, indem Texte automatisch erkannt, vorgelesen und bei Bedarf digital weiterverarbeitet werden.'
         }
       ]
     },
@@ -128,25 +128,25 @@ export const aidsContent = {
       items: [
         { name: 'Beleuchtungssysteme',
           img: `${import.meta.env.BASE_URL}images/aids/beleuchtungen.webp`,
-          img_source: 'Schweizer Optik', 
-          description: 'Gezielte Beleuchtung kann die Lesbarkeit bei vielen Augenerkrankungen erheblich verbessern.' 
+          img_source: 'Schweizer Optik',
+          description: 'Gezielte Beleuchtung kann die Lesbarkeit bei vielen Augenerkrankungen erheblich verbessern.'
         },
-        { 
+        {
           name: 'Lesepulte',
           img: `${import.meta.env.BASE_URL}images/aids/lesepulte.webp`,
-          img_source: 'Schweizer Optik', 
-          description: 'Sorgen für eine stabile Leseposition und erleichtern entspanntes, konzentriertes Lesen – auch über längere Zeit.' 
+          img_source: 'Schweizer Optik',
+          description: 'Sorgen für eine stabile Leseposition und erleichtern entspanntes, konzentriertes Lesen – auch über längere Zeit.'
         },
-        { 
+        {
           name: 'Hilfsmittel zur Objekterkennung',
           img: `${import.meta.env.BASE_URL}images/aids/objekterkennung.webp`,
-          img_source: 'Eschenbach Optik', 
-          description: 'Unterstützen im Alltag, indem sie Farben, Gegenstände und Personen zuverlässig erkennen und akustisch benennen.' 
+          img_source: 'Eschenbach Optik',
+          description: 'Unterstützen im Alltag, indem sie Farben, Gegenstände und Personen zuverlässig erkennen und akustisch benennen.'
         },
         { name: 'Sprechende Helfer',
           img: `${import.meta.env.BASE_URL}images/aids/sprechendehelfer.webp`,
-          img_source: 'Eschenbach Optik', 
-          description: 'Erleichtern den Alltag mit praktischen Sprachfunktionen und sorgen für mehr Selbstständigkeit in vielen Lebensbereichen.' 
+          img_source: 'Eschenbach Optik',
+          description: 'Erleichtern den Alltag mit praktischen Sprachfunktionen und sorgen für mehr Selbstständigkeit in vielen Lebensbereichen.'
         }
       ]
     }
@@ -212,9 +212,6 @@ export const infoContent = {
   }
 }
 
-// ---------------------------------------------------------------------------
-// Downloads page
-// ---------------------------------------------------------------------------
 export const downloadsIntro = {
   pageHeader: {
     title: 'Downloads',
@@ -223,15 +220,11 @@ export const downloadsIntro = {
   intro: 'Laden Sie unsere Informationsbroschüren, Patienteninformationen und Fachunterlagen kostenlos herunter.'
 }
 
-// ---------------------------------------------------------------------------
-// Legal / Privacy / Accessibility — template copy
-// ---------------------------------------------------------------------------
 export const legalContent = {
   pageHeader: {
     title: 'Impressum',
     subtitle: 'Angaben gemäß § 5 TMG'
   },
-  // Replace with the actual operator details
   operator: {
     name: 'Low Vision Kreis e.V.',
     street: 'Musterstraße 1',
@@ -259,9 +252,6 @@ export const accessibilityContent = {
   }
 }
 
-// ---------------------------------------------------------------------------
-// Members page
-// ---------------------------------------------------------------------------
 export const membersContent = {
   pageHeader: {
     title: 'Unsere Mitglieder',

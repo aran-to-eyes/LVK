@@ -33,13 +33,6 @@ export async function fetchAndParsePartners() {
   })
 }
 
-/**
- * The source CSV stores coordinates with dots as thousands-separators
- * throughout the decimal digits (e.g. "485.236.164" → 48.5236164).
- * Strip all dots, then reinsert the decimal at the correct position:
- *   lat: Germany is 47–55 °N → always 2 integer digits
- *   lng: Germany is 5–15 °E → 2 digits if ≥10, else 1
- */
 function parseGermanCoord(raw, isLat) {
   if (!raw) return NaN
   const s = String(raw).trim()

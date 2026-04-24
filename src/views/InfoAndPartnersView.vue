@@ -21,7 +21,6 @@
 
    
 
-    <!-- Useful external links -->
     <BaseSection :variant = "'alt'">
 
       <h2 class="usefulLinks-headline">{{ c.usefulLinks.headline }}</h2>

@@ -7,13 +7,11 @@
     role="status"
     aria-live="polite"
   >
-    <!-- Loading -->
     <template v-if="status === 'loading'">
       <span class="search-status__dot search-status__dot--pulse" aria-hidden="true" />
       Suche läuft …
     </template>
 
-    <!-- Resolved with results -->
     <template v-else-if="status === 'resolved' && resultCount > 0">
       <span class="search-status__dot search-status__dot--success" aria-hidden="true" />
       {{ resultCount }} {{ resultCount === 1 ? 'Ergebnis' : 'Ergebnisse' }}
@@ -23,19 +21,16 @@
       </template>
     </template>
 
-    <!-- Resolved but no results -->
     <template v-else-if="status === 'resolved' && resultCount === 0">
       <span class="search-status__dot search-status__dot--warn" aria-hidden="true" />
       Keine Partner in diesem Bereich gefunden.
     </template>
 
-    <!-- Not found -->
     <template v-else-if="status === 'not-found'">
       <span class="search-status__dot search-status__dot--warn" aria-hidden="true" />
       Ort nicht gefunden. Bitte Schreibweise prüfen.
     </template>
 
-    <!-- Error -->
     <template v-else-if="status === 'error'">
       <span class="search-status__dot search-status__dot--error" aria-hidden="true" />
       Suche fehlgeschlagen. Bitte später erneut versuchen.

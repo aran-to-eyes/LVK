@@ -1,9 +1,3 @@
-<!--
-  GlassesAndAidsView.vue
-
-  Informational page about optical and electronic visual aids for low vision.
-  Content is organised into categories from siteContent.js.
--->
 <template>
   <div>
 
@@ -15,7 +9,6 @@
     />
 
 
-    <!-- Aid categories -->
     <BaseSection
       v-for="(cat, idx) in c.categories"
       :key="cat.title"

@@ -1,21 +1,3 @@
-/**
- * data/downloads.js
- *
- * List of downloadable files shown on the Downloads page.
- *
- * How to add a new download:
- *   1. Place the file in /public/downloads/
- *   2. Add an entry to the array below with the correct `file` path.
- *
- * Fields:
- *   title    – display name
- *   file     – path relative to /public (will be served as a static asset)
- *   type     – short type label shown in the UI (e.g. "PDF", "ZIP")
- *   size     – human-readable file size string (e.g. "1.2 MB")
- *   category – used to group downloads in the UI
- *   date     – last updated date string (YYYY-MM-DD)
- */
-
 export const downloads = [
   {
     title: 'Low Vision Kreis - Beitrittserklärung',

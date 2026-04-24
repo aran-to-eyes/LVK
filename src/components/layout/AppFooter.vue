@@ -2,7 +2,6 @@
 <template>
   <footer class="site-footer" role="contentinfo">
     <BaseContainer>
-      <!-- Bottom bar -->
       <div class="site-footer__bottom">
         <span>© {{ currentYear }} Low Vision Kreis. Alle Rechte vorbehalten.</span>
         <nav aria-label="Rechtliche Links" class="footer-legal-nav">

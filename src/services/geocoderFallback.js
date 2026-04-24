@@ -56,5 +56,5 @@ function readCache(key) {
 }
 
 function writeCache(key, value) {
-  try { localStorage.setItem(key, JSON.stringify(value)) } catch { /* quota */ }
+  try { localStorage.setItem(key, JSON.stringify(value)) } catch { }
 }

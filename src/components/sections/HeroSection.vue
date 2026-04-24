@@ -2,7 +2,6 @@
 <template>
   <div class="hero" :class="{ 'hero--has-bg-image': backgroundImage }" role="banner">
 
-    <!-- Background image + overlay (only rendered when prop is set) -->
     <template v-if="backgroundImage">
       <img
         :src="backgroundImage"
@@ -17,7 +16,6 @@
       />
     </template>
 
-    <!-- Foreground content -->
     <BaseContainer class="hero__container">
       <div class="hero__content">
         <p v-if="tagline" class="hero__tag">{{ tagline }}</p>

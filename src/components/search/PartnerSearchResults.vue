@@ -1,34 +1,15 @@
-<!--
-  PartnerSearchResults.vue
-
-  Renders the appropriate state output for the nearest-partner search:
-    idle      → nothing (or a slot for default content)
-    loading   → LoadingState spinner
-    resolved  → 3 PartnerCard components
-    not-found → EmptyState
-    error     → ErrorState
-
-  Props:
-    status          – search status string from usePartnerFinder
-    results         – array of partner objects with distanceKm
-    resolvedLocation – { city, postalCode? } from usePartnerFinder
-    noResultsText   – custom empty-state message
--->
 <template>
   <div class="search-results" aria-live="polite" aria-atomic="false">
 
-    <!-- Idle — show nothing, parent can pass default slot content instead -->
     <template v-if="status === 'idle'">
       <slot name="idle" />
     </template>
 
-    <!-- Loading spinner -->
     <LoadingState
       v-else-if="status === 'loading'"
       message="Partner in Ihrer Nähe werden gesucht …"
     />
 
-    <!-- Success with results -->
     <template v-else-if="status === 'resolved' && results.length > 0">
       <div class="search-results__grid">
         <PartnerCard
@@ -39,7 +20,6 @@
       </div>
     </template>
 
-    <!-- Success but no results -->
     <EmptyState
       v-else-if="status === 'resolved' && results.length === 0"
       icon="🔍"
@@ -47,7 +27,6 @@
       :message="noResultsText"
     />
 
-    <!-- Location not in gazetteer -->
     <EmptyState
       v-else-if="status === 'not-found'"
       icon="📍"
@@ -55,7 +34,6 @@
       message="Bitte prüfen Sie die Schreibweise oder geben Sie eine 5-stellige Postleitzahl ein."
     />
 
-    <!-- Unexpected error -->
     <ErrorState
       v-else-if="status === 'error'"
       title="Suche fehlgeschlagen"

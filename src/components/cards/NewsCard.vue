@@ -24,7 +24,6 @@ const props = defineProps({
   to:       { type: String, default: '' }
 })
 
-// Format ISO date (2023-05-01) to German locale (01.05.2023)
 const formattedDate = computed(() => {
   if (!props.date) return ''
   try {

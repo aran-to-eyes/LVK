@@ -1,6 +1,5 @@
 
 <template>
-  <!-- RouterLink for internal navigation -->
   <RouterLink
     v-if="to"
     :to="to"
@@ -10,7 +9,6 @@
     <slot />
   </RouterLink>
 
-  <!-- Anchor tag for external URLs -->
   <a
     v-else-if="href"
     :href="href"
@@ -20,11 +18,9 @@
     :aria-disabled="disabled || undefined"
   >
     <slot />
-    <!-- Screen-reader notice for external link -->
     <span class="sr-only">(öffnet in neuem Tab)</span>
   </a>
 
-  <!-- Native button for actions (default) -->
   <button
     v-else
     :type="type"

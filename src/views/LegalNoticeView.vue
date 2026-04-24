@@ -84,7 +84,6 @@ useMeta({ title: 'Impressum' })
 </script>
 
 <style scoped>
-/* Prose styles for long-form legal text */
 .prose h2 {
   font-size: var(--font-size-xl);
   margin-top: var(--space-10);

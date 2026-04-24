@@ -1,13 +1,3 @@
-<!--
-  MainNav.vue
-
-  Horizontal desktop navigation bar.
-  Reads link data from src/data/navigation.js.
-
-  RouterLink applies .router-link-active automatically when the current
-  route starts with the link's `to` path. We use `exact-active-class` for
-  the home route ("/") to prevent it from matching every route.
--->
 <template>
   <ul class="main-nav" role="list">
     <span v-for="item in mainNav" :key="item.to">

@@ -9,7 +9,6 @@
       :backgroundImage = "c.hero.backgroundImage"
     />
 
-    <!-- Mission statement -->
     <BaseSection>
       <div class="container--wide">
         <h2 style="text-align: center;">{{ c.mission.headline }}</h2>
@@ -17,7 +16,6 @@
       </div>
     </BaseSection>
 
-    <!-- Goals -->
     <BaseSection variant="alt">
       <SectionIntro :title="c.goals.headline" />
       <RichText :content="c.goals.richText"  class="lead goals-richText"/> 

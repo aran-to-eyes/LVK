@@ -6,12 +6,10 @@
     class="download-item"
     :aria-label="`${title} herunterladen (${type}, ${size})`"
   >
-    <!-- File type icon -->
     <span class="download-item__icon" aria-hidden="true">
       {{ typeIcon }}
     </span>
 
-    <!-- Info -->
     <div class="download-item__info">
       <p class="download-item__title">{{ title }}</p>
       <p class="download-item__meta">
@@ -20,7 +18,6 @@
       </p>
     </div>
 
-    <!-- Type badge -->
     <span class="download-item__type">{{ type }}</span>
   </a>
 </template>
@@ -37,7 +34,6 @@ const props = defineProps({
   date:     { type: String, default: '' }
 })
 
-// Extract just the filename for the download attribute
 const fileName = computed(() => props.file.split('/').pop())
 
 const typeIcon = computed(() => {

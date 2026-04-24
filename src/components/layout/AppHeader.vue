@@ -1,53 +1,35 @@
-<!--
-  AppHeader.vue
-
-  Sticky site header.
-
-  Layout:
-  - Logo is the primary anchor, displayed prominently on the left.
-  - Burger menu button is always visible on ALL breakpoints (desktop included).
-    There is no inline horizontal nav — all navigation lives in the sidebar.
-  - Clicking the burger opens the SidebarNav (MobileNav.vue).
-
-  The "always-burger" pattern keeps the header clean and consistent across
-  breakpoints, and gives the logo maximum visual weight.
--->
 <template>
   <header class="site-header" role="banner">
-    
-      <div class="site-header__inner">
 
-        <!-- Logo — primary visual anchor -->
-        <RouterLink
-          to="/"
-          class="site-header__logo"
-          aria-label="Low Vision Kreis – zur Startseite"
-        >
-          <img
-            :src="`${base}images/logo.png`"
-            alt="Low Vision Kreis"
-            class="site-header__logo-img"
-          />
-        </RouterLink>
+    <div class="site-header__inner">
 
-        <!-- Burger button — always visible, all breakpoints -->
-        <button
-          class="hamburger"
-          :class="{ 'hamburger--active': navOpen }"
-          :aria-expanded="navOpen.toString()"
-          aria-controls="sidebar-nav"
-          :aria-label="navOpen ? 'Menü schließen' : 'Menü öffnen'"
-          @click="toggleNav"
-        >
-          <span class="hamburger__line" />
-          <span class="hamburger__line" />
-          <span class="hamburger__line" />
-        </button>
+      <RouterLink
+        to="/"
+        class="site-header__logo"
+        aria-label="Low Vision Kreis – zur Startseite"
+      >
+        <img
+          :src="`${base}images/logo.png`"
+          alt="Low Vision Kreis"
+          class="site-header__logo-img"
+        />
+      </RouterLink>
 
-      </div>
-    
+      <button
+        class="hamburger"
+        :class="{ 'hamburger--active': navOpen }"
+        :aria-expanded="navOpen.toString()"
+        aria-controls="sidebar-nav"
+        :aria-label="navOpen ? 'Menü schließen' : 'Menü öffnen'"
+        @click="toggleNav"
+      >
+        <span class="hamburger__line" />
+        <span class="hamburger__line" />
+        <span class="hamburger__line" />
+      </button>
 
-    <!-- Off-canvas sidebar navigation (teleports to <body>) -->
+    </div>
+
     <SidebarNav
       id="sidebar-nav"
       :open="navOpen"
@@ -65,7 +47,6 @@ const navOpen = ref(false)
 
 function toggleNav() {
   navOpen.value = !navOpen.value
-  // Prevent page scroll when sidebar is open
   document.body.style.overflow = navOpen.value ? 'hidden' : ''
 }
 
@@ -76,7 +57,6 @@ function closeNav() {
 </script>
 
 <style scoped>
-/* Burger button — absolutely positioned to the right so the logo stays centered */
 .hamburger {
   display: flex;
   flex-shrink: 0;
@@ -113,7 +93,6 @@ function closeNav() {
   transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
-/* × animation when active */
 .hamburger--active .hamburger__line:nth-child(1) {
   transform: translateY(12px) rotate(45deg);
 }
@@ -125,7 +104,6 @@ function closeNav() {
   transform: translateY(-12px) rotate(-45deg);
 }
 
-/* Logo image — taller than before for stronger visual presence */
 .site-header__logo-img {
   height: 100%;
 }

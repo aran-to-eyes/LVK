@@ -1,7 +1,6 @@
 
 <template>
   <div class="download-list">
-    <!-- Grouped by category -->
     <template v-if="showCategories && groupedItems.length">
       <section
         v-for="group in groupedItems"
@@ -19,7 +18,6 @@
       </section>
     </template>
 
-    <!-- Flat list without categories -->
     <template v-else>
       <div class="download-list__items">
         <DownloadItem
@@ -41,11 +39,6 @@ const props = defineProps({
   showCategories: { type: Boolean, default: true }
 })
 
-/**
- * groupedItems
- * Groups the flat items array into { category, items[] } objects.
- * Preserves the insertion order of categories.
- */
 const groupedItems = computed(() => {
   const map = new Map()
   for (const item of props.items) {
