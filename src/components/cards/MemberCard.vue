@@ -12,6 +12,9 @@
 
     <div class="partner-card__header">
       <h3 class="partner-card__name">{{ member.Bezeichnung }}</h3>
+      <span v-if="member.distanceKm != null" class="partner-card__distance" aria-label="Entfernung">
+        {{ formattedDistance }}
+      </span>
     </div>
 
     <address class="partner-card__address" style="font-style: normal">
@@ -19,7 +22,7 @@
       {{ member.PLZ }} {{ member.Ort }}
     </address>
 
-    <div v-if="member.Tel || member.Email" class="partner-card__contacts">
+    <div v-if="member.Tel || member.Email || member.Website" class="partner-card__contacts">
       <a
         v-if="member.Tel"
         :href="`tel:${cleanPhone}`"
@@ -38,13 +41,37 @@
         <span aria-hidden="true">✉</span>
         {{ member.Email }}
       </a>
+      <a
+        v-if="member.Website"
+        :href="member.Website"
+        class="partner-card__contact-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        :aria-label="`Website: ${member.Website}`"
+      >
+        <span aria-hidden="true">🌐</span>
+        {{ member.Website.replace(/^https?:\/\//, '') }}
+      </a>
     </div>
+
+    <a
+      v-if="mapLink"
+      :href="mapLink"
+      class="partner-card__map-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      :aria-label="`${member.Bezeichnung} auf Karte anzeigen`"
+    >
+      🗺 Auf Karte anzeigen
+    </a>
 
   </article>
 </template>
 
 <script setup>
 import { computed } from 'vue'
+import { formatDistance } from '@/utils/distance.js'
+import { getPartnerMapLink } from '@/utils/maps.js'
 
 const props = defineProps({
   member: { type: Object, required: true }
@@ -52,7 +79,11 @@ const props = defineProps({
 
 const baseUrl = import.meta.env.BASE_URL
 
+const formattedDistance = computed(() => formatDistance(props.member.distanceKm))
+
 const cleanPhone = computed(() =>
   (props.member.Tel || '').replace(/\s/g, '')
 )
+
+const mapLink = computed(() => getPartnerMapLink(props.member))
 </script>

@@ -1,48 +1,48 @@
-Ident;Bezeichnung;Strasse;PLZ;Ort;Tel;Email;Lat;Lng;Image
-1;Strebel-Hiltwein Optik;Europaplatz 2/1;72070;Tübingen;0 70 71 - 36 70 76;a.hoffman@strebel-hiltwein.de;485.236.164;90.535.531;images/members/Strebel_Hiltwein_Optik.webp
-2;Optik Arnold GmbH;Rheinstr. 16;76185;Karlsruhe-Mühlburg;07 21 - 55 21 79;info@arnold-optik.de;4.901.515.197.753.900;835.077.953.338.623;images/members/Optik_Arnold_GmbH.webp
-3;Hepp & Hepp Optik-Photo GmbH;Marktstätte 9;78462;Konstanz;0 75 31 - 2 35 52;info@optik-hepp.de;47.659.216;91.750.718;images/members/Hepp_Hepp_Optik_Photo_GmbH.webp
-4;Ebner Optik;Bismarckstr. 4;79761;Waldshut;0 77 51 - 33 30;info@ebner-optik.de;476.246.179;82.120.605;images/members/Ebner_Optik.webp
-5;Bergermann Brille + Linse;Martinstorplatz 3;88239;Wangen;0 75 22 - 8 09 65;info@bergermann-optik.de;47.685.470;9.832.120;images/members/Bergermann_Brille_Linse.webp
-6;Stöhr & Oster Brillen-Hörsysteme-Vergrößernde Sehhilfen;Haldenstr. 11;88499;Riedlingen;0 73 71 - 75 95;kontakt@stoehr-oster.de;481.534.412;94.748.796;images/members/Stoehr_Oster_Brillen_Hoersysteme_Vergroessernde_Sehhilfen.webp
-7;Trio Optik GmbH;Sendlinger-Tor-Platz 7;80336;München;0 89 54 - 50 69 13;trio-service@trio-optik.de;481.371.079;115.753.822;images/members/Trio_Optik_GmbH.webp
-9;Augenoptik Sommerfeld;Friedrichstr. 2;91054;Erlangen;0 91 31 - 2 38 83;info@euronet-server.com;495.981.187;11.003.645;images/members/Augenoptik_Sommerfeld.webp
-10;Optiker Junge;Bahnhofstraße 77;96231;Bad Staffelstein;0 95 73 - 55 20;info@optiker-junge.de;501.028.062;110.006.441;images/members/Optiker_Junge.webp
-12;Optik Kühntopp;Windscheidtstr. 12;10627;Berlin;030 - 3 23 85 65;info@kuehntopp.de;52.507.785;13.298.828;images/members/Optik_Kuehntopp.webp
-13;Brillen Marx;Tempelhofer Damm 186;12099;Berlin;0 30 - 7 52 20 43;info@brillen-marx.de;524.556.224;13.386.398;images/members/Brillen_Marx.webp
-14;Schleicher Augenoptik GmbH;Drakestr. 31;12205;Berlin;0 30 - 8 33 48 04;lichterfelde@schleicher-optik.de;52.442.220;13.297.910;images/members/Schleicher_Augenoptik_GmbH.webp
-15;Augenoptik Hagemann;Oberfeldstr. 192;12683;Berlin;0 30 - 54 37 69 20;obf@augenoptik-hagemann.de;52.514.500;13.555.020;images/members/Augenoptik_Hagemann.webp
-16;Müller Optik;Scharnweberstr. 53;13405;Berlin;0 30 - 4 12 27 53;mueller@optik53.de;52.512.230;13.470.320;images/members/Mueller_Optik.webp
-17;Meier Augenoptik GmbH;Seegefelder Str. 58;13583;Berlin;0 30 - 3 33 36 59;berlin@meier-augenoptik.de;52.537.330;13.189.020;images/members/Meier_Augenoptik_GmbH.webp
-18;Low Vision Cottbus;Friedrich-Ebert-Str. 16;3044;Cottbus;03 55 - 78 40 75 65;kontakt@lowvisioncottbus.de;517.567.447;143.357.307;images/members/Low_Vision_Cottbus.webp
-19;City Optik Scharnbeck;Brandenburger Straße 46;14467;Potsdam;03 31 - 29 34 48;info@scharnbeck-optik.de;524.009.309;130.591.397;images/members/City_Optik_Scharnbeck.webp
-20;lux-Augenoptik;Fischerstr. 12;16515;Oranienburg;0 33 01 - 30 54;service@lux-augenoptik.de;527.529.379;132.457.591;images/members/lux_Augenoptik.webp
-21;Augenoptik Berger Thieß;Schicklerstraße 12;16225;Eberswalde; 0 33 34 - 2 45 06;v.thiess@berger-optik.de;528.351.496;137.997.011;images/members/Augenoptik_Berger_Thiess.webp
-22;Gothmann Optik Akustik;Parkstr. 7;27580;Bremerhaven;04 71 - 8 16 26;info@gothmann-optik.de;535.522.264;85.865.509;images/members/Gothmann_Optik_Akustik.webp
-23;Optiker Greten GmbH;Dobbenweg 3;28203;Bremen;04 21 - 70 09 31;info@optiker-greten.de;530.758.196;88.071.646;images/members/Optiker_Greten_GmbH.webp
-24;Gaida Optik & Akustik;Von-Brentano-Str. 10;63073;Offenbach/EKZ Bieber-West;0 69 - 89 15 04;info@gaida-optik.de;501.055.002;87.610.698;images/members/Gaida_Optik_Akustik.webp
-25;Optiker Carl Müller;Steinweg 12;60313;Frankfurt;0 69 - 91 33 53-0;kontakt@optikercarlmueller.com;501.106.444;86.820.917;images/members/Optiker_Carl_Mueller.webp
-27;Optik Maack OHG;Marktstr. 14;21423;Winsen/Luhe;0 41 71 - 46 08;info@optik-maack.de;533.636.474;102.059.206;images/members/Optik_Maack_OHG.webp
-28;Akustik-Optik Huth;Deichstr. 4;27318;Hoya;0 42 51 - 26 15;joerg.windler@huth-hoya.de;52.806.392.669.677.700;9.135.110.855.102.530;images/members/Akustik_Optik_Huth.webp
-29;Brillen Studio Kleine-Flaßbeck GmbH;Dorfstr. 8;33739;Bielefeld;0 52 06 - 25 41;joellenbeck@brillen-studio.net;520.191.005;8.531.007;images/members/Brillen_Studio_Kleine_Flassbeck_GmbH.webp
-30;Augenoptik Möller e. K.;Grünstr. 11;42551;Velbert;0 20 51 - 5 30 42;info@optik-moeller.de;513.406.713;70.439.912;images/members/Augenoptik_Moeller_e_K.webp
-31;Optik Siewert e.K.;Siegburgstr. 19;44359;Dortmund-Mengede;02 31 - 33 93 10;info@optik-siewert.de;515.703.117;73.744.529;images/members/Optik_Siewert_e_K.webp
-32;Brillen-Plum-Kontaktlinsen;Hauptstr. 267;44649;Herne;0 23 25 - 7 77 74;optik-plum@euronet-server.com;515.380.394;7.219.985;images/members/Brillen_Plum_Kontaktlinsen.webp
-33;Blickfang e.K.;Esseler Str. 2;45739;Oer-Erkenschwick;0 23 68 - 9 62 78 00;info@blickfang-oer.de;5.163.727.951.049.800;7.240.177.631.378.170;images/members/Blickfang_e_K.webp
-35;Optik Motz;Königsberger Ring 2a;65239;Hochheim am Main;0 61 46 -  99 45;info@optik-metz.de;50.017.126;8.346.030;images/members/Optik_Motz.webp
-36;Optik Zierke;Hauptstraße 74;52379;Langerwehe; 0 24 23 - 51 98;hilka.zierke@optik-zierke.de;50.801.983;63.681.233;images/members/Optik_Zierke.webp
-37;Brillenmacher Optik;Moltkeplatz 4;53173;Bonn;02 28 - 36 49 99;Info@brillenmacher-bonn.de;50.685.444;7.155.397;images/members/Brillenmacher_Optik.webp
-39;BESSER SEHEN KRUMM ;Wittgensteiner Str. 123;57271;Hilchenbach;0 27 33 - 6 93 20;info@besser-sehen-krumm.de;509.935.863;8.107.365;images/members/BESSER_SEHEN_KRUMM.webp
-40;Optik Ziel;Heilig-Geist-Str. 24;58135;Hagen;0 23 31 - 90 27 00;info@optik-ziel.de;513.582.945;7.473.296;images/members/Optik_Ziel.webp
-41;Weinkauf & Sohn Sehen und Hören GmbH;Löhrstr. 10 - 12;56068;Koblenz;02 61 - 1 50 81;buero@weinkaufundsohn.de;503.533.278;75.943.951;images/members/Weinkauf_Sohn_Sehen_und_Hoeren_GmbH.webp
-42;Alban Holl GmbH;Pickardstr. 23;66346;Püttlingen;0 68 98 - 6 72 64;info@optik-holl.de;494.854.797;62.677.834;images/members/Alban_Holl_GmbH.webp
-43;Lennartz Augenoptik;Markt 8;8468;Reichenbach;0 37 65 - 6 70 11;info@lennartz-augenoptik.de;506.219.793;123.050.884;images/members/Lennartz_Augenoptik.webp
-44;Optiker Meyer;Schwartauer Allee 1;23554;Lübeck;04 51 - 4 17 40;info@optiker-meyer.de;53.866.444;10.684.738;images/members/Optiker_Meyer.webp
-45;OptimalSehen;Fliegender Hollänader 9;24159;Kiel;04 31 - 26 09 09 50;info@optimalsehen.com;543.227.085;10.135.555;images/members/OptimalSehen.webp
-46;Deubner moderne Augenoptik GmbH;Vor dem Schlosse 16;99947;Bad Langensalza;0 36 03 - 8 61 70;info@deubner-augenoptik.de;511.082.267;106.464.452;images/members/Deubner_moderne_Augenoptik_GmbH.webp
-47;Wipfler Augenoptik;Lammstraße 19;79312;Emmendingen;0 76 41 - 53 131;info@wipfler-augenoptik.de;48.121.990;7.847.430;images/members/Wipfler_Augenoptik.webp
-48;Augen und Sehen Henze;Pirckheimerstr. 61;90408;Nürnberg;0 911 - 3 66 80 855;info@augeundsehen-henze.de;49.452.103;11.076.665;images/members/Augen_und_Sehen_Henze.webp
-49;Brillenhaus Grimmen;Bahnhofstraße 51;18507;Grimmen;028326 -2904;info@brillenhaus-grimmen.de;54.112.112;13.039.680;images/members/Brillenhaus_Grimmen.webp
-50;Brillenhaus Greifswald;Lange Straße 74;17489;Hansestadt Greifswald;03834 - 855 700;info@brillenhaus-greifswald.de;54.096.091;13.378.955;images/members/Brillenhaus_Greifswald.webp
-51;Brillenhaus Stralsund;Ossenreyerstraße 59;18439;Hansestadt Stralsund;03831 - 44 588 08;info@brillenhaus-stralsund.de;54.314.479;13.090.562;images/members/Brillenhaus_Stralsund.webp
-52;Brillenhaus Demmin;Clara-Zetkin-Straße 31;3998;Hansestadt Demmin;03998 - 28 58 692;info@brillenhaus-demmin.de;53.906.669;13.039.809;images/members/Brillenhaus_Demmin.webp
+Ident;Bezeichnung;Strasse;PLZ;Ort;Tel;Email;Lat;Lng;Image;Website;
+1;Strebel-Hiltwein Optik;Europaplatz 2/1;72070;Tübingen;0 70 71 - 36 70 76;a.hoffman@strebel-hiltwein.de;485.236.164;90.535.531;images/members/Strebel_Hiltwein_Optik.webp;https://strebel-hiltwein.de;
+2;Optik Arnold GmbH;Rheinstr. 16;76185;Karlsruhe-Mühlburg;07 21 - 55 21 79;info@arnold-optik.de;4.901.515.197.753.900;835.077.953.338.623;images/members/Optik_Arnold_GmbH.webp;https://arnold-optik.de;
+3;Hepp & Hepp Optik-Photo GmbH;Marktstätte 9;78462;Konstanz;0 75 31 - 2 35 52;info@optik-hepp.de;47.659.216;91.750.718;images/members/Hepp_Hepp_Optik_Photo_GmbH.webp;https://optik-hepp.de;
+4;Ebner Optik;Bismarckstr. 4;79761;Waldshut;0 77 51 - 33 30;info@ebner-optik.de;476.246.179;82.120.605;images/members/Ebner_Optik.webp;https://ebner-optik.de;
+5;Bergermann Brille + Linse;Martinstorplatz 3;88239;Wangen;0 75 22 - 8 09 65;info@bergermann-optik.de;47.685.470;9.832.120;images/members/Bergermann_Brille_Linse.webp;https://bergermann-optik.de;
+6;Stöhr & Oster Brillen-Hörsysteme-Vergrößernde Sehhilfen;Haldenstr. 11;88499;Riedlingen;0 73 71 - 75 95;kontakt@stoehr-oster.de;481.534.412;94.748.796;images/members/Stoehr_Oster_Brillen_Hoersysteme_Vergroessernde_Sehhilfen.webp;https://stoehr-oster.de;
+7;Trio Optik GmbH;Sendlinger-Tor-Platz 7;80336;München;0 89 54 - 50 69 13;trio-service@trio-optik.de;481.371.079;115.753.822;images/members/Trio_Optik_GmbH.webp;https://triooptik.com/;triooptik.com/
+9;Augenoptik Sommerfeld;Friedrichstr. 2;91054;Erlangen;0 91 31 - 2 38 83;info@euronet-server.com;495.981.187;11.003.645;images/members/Augenoptik_Sommerfeld.webp;https://augenoptik-sommerfeld.de/;
+10;Optiker Junge;Bahnhofstraße 77;96231;Bad Staffelstein;0 95 73 - 55 20;info@optiker-junge.de;501.028.062;110.006.441;images/members/Optiker_Junge.webp;https://optiker-junge.de;
+12;Optik Kühntopp;Windscheidtstr. 12;10627;Berlin;030 - 3 23 85 65;info@kuehntopp.de;52.507.785;13.298.828;images/members/Optik_Kuehntopp.webp;https://kuehntopp.de;
+13;Brillen Marx;Tempelhofer Damm 186;12099;Berlin;0 30 - 7 52 20 43;info@brillen-marx.de;524.556.224;13.386.398;images/members/Brillen_Marx.webp;https://brillen-marx.de;
+14;Schleicher Augenoptik GmbH;Drakestr. 31;12205;Berlin;0 30 - 8 33 48 04;lichterfelde@schleicher-optik.de;52.442.220;13.297.910;images/members/Schleicher_Augenoptik_GmbH.webp;https://schleicher-optik.de;
+15;Augenoptik Hagemann;Oberfeldstr. 192;12683;Berlin;0 30 - 54 37 69 20;obf@augenoptik-hagemann.de;52.514.500;13.555.020;images/members/Augenoptik_Hagemann.webp;https://augenoptik-hagemann.de;
+16;Müller Optik;Scharnweberstr. 53;13405;Berlin;0 30 - 4 12 27 53;mueller@optik53.de;52.512.230;13.470.320;images/members/Mueller_Optik.webp;https://optik53.de;
+17;Meier Augenoptik GmbH;Seegefelder Str. 58;13583;Berlin;0 30 - 3 33 36 59;berlin@meier-augenoptik.de;52.537.330;13.189.020;images/members/Meier_Augenoptik_GmbH.webp;https://meier-augenoptik.de;
+18;Low Vision Cottbus;Friedrich-Ebert-Str. 16;3044;Cottbus;03 55 - 78 40 75 65;kontakt@lowvisioncottbus.de;517.567.447;143.357.307;images/members/Low_Vision_Cottbus.webp;https://lowvisioncottbus.de;
+19;City Optik Scharnbeck;Brandenburger Straße 46;14467;Potsdam;03 31 - 29 34 48;info@scharnbeck-optik.de;524.009.309;130.591.397;images/members/City_Optik_Scharnbeck.webp;https://scharnbeck-optik.de;
+20;lux-Augenoptik;Fischerstr. 12;16515;Oranienburg;0 33 01 - 30 54;service@lux-augenoptik.de;527.529.379;132.457.591;images/members/lux_Augenoptik.webp;https://lux-augenoptik.de;
+21;Augenoptik Berger Thieß;Schicklerstraße 12;16225;Eberswalde; 0 33 34 - 2 45 06;v.thiess@berger-optik.de;528.351.496;137.997.011;images/members/Augenoptik_Berger_Thiess.webp;https://berger-optik.de;
+22;Gothmann Optik Akustik;Parkstr. 7;27580;Bremerhaven;04 71 - 8 16 26;info@gothmann-optik.de;535.522.264;85.865.509;images/members/Gothmann_Optik_Akustik.webp;https://gothmann-optik.de;
+23;Optiker Greten GmbH;Dobbenweg 3;28203;Bremen;04 21 - 70 09 31;info@optiker-greten.de;530.758.196;88.071.646;images/members/Optiker_Greten_GmbH.webp;https://optiker-greten.de;
+24;Gaida Optik & Akustik;Von-Brentano-Str. 10;63073;Offenbach/EKZ Bieber-West;0 69 - 89 15 04;info@gaida-optik.de;501.055.002;87.610.698;images/members/Gaida_Optik_Akustik.webp;https://gaida-optik.de;
+25;Optiker Carl Müller;Steinweg 12;60313;Frankfurt;0 69 - 91 33 53-0;kontakt@optikercarlmueller.com;501.106.444;86.820.917;images/members/Optiker_Carl_Mueller.webp;https://optikercarlmueller.com;
+27;Optik Maack OHG;Marktstr. 14;21423;Winsen/Luhe;0 41 71 - 46 08;info@optik-maack.de;533.636.474;102.059.206;images/members/Optik_Maack_OHG.webp;https://optik-maack.de;
+28;Akustik-Optik Huth;Deichstr. 4;27318;Hoya;0 42 51 - 26 15;joerg.windler@huth-hoya.de;52.806.392.669.677.700;9.135.110.855.102.530;images/members/Akustik_Optik_Huth.webp;https://huth-hoya.de;
+29;Brillen Studio Kleine-Flaßbeck GmbH;Dorfstr. 8;33739;Bielefeld;0 52 06 - 25 41;joellenbeck@brillen-studio.net;520.191.005;8.531.007;images/members/Brillen_Studio_Kleine_Flassbeck_GmbH.webp;https://brillen-studio.de;
+30;Augenoptik Möller e. K.;Grünstr. 11;42551;Velbert;0 20 51 - 5 30 42;info@optik-moeller.de;513.406.713;70.439.912;images/members/Augenoptik_Moeller_e_K.webp;;
+31;Optik Siewert e.K.;Siegburgstr. 19;44359;Dortmund-Mengede;02 31 - 33 93 10;info@optik-siewert.de;515.703.117;73.744.529;images/members/Optik_Siewert_e_K.webp;https://optik-siewert.de;
+32;Brillen-Plum-Kontaktlinsen;Hauptstr. 267;44649;Herne;0 23 25 - 7 77 74;optik-plum@euronet-server.com;515.380.394;7.219.985;images/members/Brillen_Plum_Kontaktlinsen.webp;https://optik-plum.de;
+33;Blickfang e.K.;Esseler Str. 2;45739;Oer-Erkenschwick;0 23 68 - 9 62 78 00;info@blickfang-oer.de;5.163.727.951.049.800;7.240.177.631.378.170;images/members/Blickfang_e_K.webp;https://blickfang-oer.de;
+35;Optik Metz;Königsberger Ring 2a;65239;Hochheim am Main;0 61 46 -  99 45;info@optik-metz.de;50.017.126;8.346.030;images/members/Optik_Motz.webp;https://optik-metz.de;
+36;Optik Zierke;Hauptstraße 74;52379;Langerwehe; 0 24 23 - 51 98;hilka.zierke@optik-zierke.de;50.801.983;63.681.233;images/members/Optik_Zierke.webp;https://optik-zierke.de;
+37;Brillenmacher Optik;Moltkeplatz 4;53173;Bonn;02 28 - 36 49 99;Info@brillenmacher-bonn.de;50.685.444;7.155.397;images/members/Brillenmacher_Optik.webp;https://brillenmacher-bonn.de;
+39;BESSER SEHEN KRUMM ;Wittgensteiner Str. 123;57271;Hilchenbach;0 27 33 - 6 93 20;info@besser-sehen-krumm.de;509.935.863;8.107.365;images/members/BESSER_SEHEN_KRUMM.webp;https://besser-sehen-krumm.de;
+40;Optik Ziel;Heilig-Geist-Str. 24;58135;Hagen;0 23 31 - 90 27 00;info@optik-ziel.de;513.582.945;7.473.296;images/members/Optik_Ziel.webp;https://optik-ziel.de;
+41;Weinkauf & Sohn Sehen und Hören GmbH;Löhrstr. 10 - 12;56068;Koblenz;02 61 - 1 50 81;buero@weinkaufundsohn.de;503.533.278;75.943.951;images/members/Weinkauf_Sohn_Sehen_und_Hoeren_GmbH.webp;https://weinkaufundsohn.de;
+42;Alban Holl GmbH;Pickardstr. 23;66346;Püttlingen;0 68 98 - 6 72 64;info@optik-holl.de;494.854.797;62.677.834;images/members/Alban_Holl_GmbH.webp;https://optik-holl.de;
+43;Lennartz Augenoptik;Markt 8;8468;Reichenbach;0 37 65 - 6 70 11;info@lennartz-augenoptik.de;506.219.793;123.050.884;images/members/Lennartz_Augenoptik.webp;https://lennartz-augenoptik.de;
+44;Optiker Meyer;Schwartauer Allee 1;23554;Lübeck;04 51 - 4 17 40;info@optiker-meyer.de;53.866.444;10.684.738;images/members/Optiker_Meyer.webp;https://optiker-meyer.de;
+45;OptimalSehen;Fliegender Hollänader 9;24159;Kiel;04 31 - 26 09 09 50;info@optimalsehen.com;543.227.085;10.135.555;images/members/OptimalSehen.webp;https://kiel-optiker.de;
+46;Deubner moderne Augenoptik GmbH;Vor dem Schlosse 16;99947;Bad Langensalza;0 36 03 - 8 61 70;info@deubner-augenoptik.de;511.082.267;106.464.452;images/members/Deubner_moderne_Augenoptik_GmbH.webp;https://deubner-augenoptik.de;
+47;Wipfler Augenoptik;Lammstraße 19;79312;Emmendingen;0 76 41 - 53 131;info@wipfler-augenoptik.de;48.121.990;7.847.430;images/members/Wipfler_Augenoptik.webp;https://wipfler-augenoptik.de;
+48;Augen und Sehen Henze;Pirckheimerstr. 61;90408;Nürnberg;0 911 - 3 66 80 855;info@augeundsehen-henze.de;49.452.103;11.076.665;images/members/Augen_und_Sehen_Henze.webp;https://augeundsehen-henze.de;
+49;Brillenhaus Grimmen;Bahnhofstraße 51;18507;Grimmen;028326 -2904;info@brillenhaus-grimmen.de;54.112.112;13.039.680;images/members/Brillenhaus_Grimmen.webp;https://brillenhaus-mv.de;
+50;Brillenhaus Greifswald;Lange Straße 74;17489;Hansestadt Greifswald;03834 - 855 700;info@brillenhaus-greifswald.de;54.096.091;13.378.955;images/members/Brillenhaus_Greifswald.webp;https://brillenhaus-mv.de;
+51;Brillenhaus Stralsund;Ossenreyerstraße 59;18439;Hansestadt Stralsund;03831 - 44 588 08;info@brillenhaus-stralsund.de;54.314.479;13.090.562;images/members/Brillenhaus_Stralsund.webp;https://brillenhaus-mv.de;
+52;Brillenhaus Demmin;Clara-Zetkin-Straße 31;3998;Hansestadt Demmin;03998 - 28 58 692;info@brillenhaus-demmin.de;53.906.669;13.039.809;images/members/Brillenhaus_Demmin.webp;https://brillenhaus-mv.de;

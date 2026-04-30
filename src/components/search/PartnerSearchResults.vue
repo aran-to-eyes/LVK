@@ -12,10 +12,10 @@
 
     <template v-else-if="status === 'resolved' && results.length > 0">
       <div class="search-results__grid">
-        <PartnerCard
+        <MemberCard
           v-for="partner in results"
           :key="partner.Ident"
-          :partner="partner"
+          :member="partner"
         />
       </div>
     </template>
@@ -45,7 +45,7 @@
 </template>
 
 <script setup>
-import PartnerCard from '@/components/cards/PartnerCard.vue'
+import MemberCard from '@/components/cards/MemberCard.vue'
 import LoadingState from '@/components/cards/LoadingState.vue'
 import EmptyState from '@/components/cards/EmptyState.vue'
 import ErrorState from '@/components/cards/ErrorState.vue'
